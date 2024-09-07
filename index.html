@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV Designer - Disini Kerjain Aja</title>
+    <link rel="icon" href="favicon/favicon.ico">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1 class="welcome-text">Selamat datang di <span class="highlight">Disini Kerjain Aja</span></h1>
+            <h2 class="selection-text">Silahkan pilih desain Anda</h2>
+        </header>
+        <main>
+            <div class="button-container">
+                <button id="cv-ats" class="btn">CV ATS</button>
+                <button id="cv-kreatif" class="btn">CV Kreatif</button>
+            </div>
+            <div id="image-container" class="image-container"></div>
+            <div id="confirmation" class="confirmation">
+                <p>Anda telah memilih <span id="selected-type"></span></p>
+                <p>Jumlah gambar: <span id="image-count"></span></p>
+                <button id="confirm-btn" class="btn">Konfirmasi</button>
+            </div>
+        </main>
+    </div>
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <img id="modal-img" src="" alt="">
+            <p id="modal-caption"></p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
